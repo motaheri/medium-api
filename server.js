@@ -30,7 +30,7 @@ setInterval(function() {
     http.get("http://mediumapi-motaheri.rhcloud.com");
 }, 1800000 + 1800000*Math.random()); // every 30 minutes + [0-1] * 30 
 
-var port = 80 || 8080;
+var port = process.env.PORT || 8080;
 app.listen(port, function () {
     console.log('Medium API listening on ' + port);
 });
