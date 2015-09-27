@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/uesteibar/medium-api.git"
+    "url": "http://github.com/motaheri/medium-api.git"
   },
   "keywords": [
     "medium",
@@ -18,12 +18,12 @@
   "author": "uesteibar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uesteibar/medium-api/issues"
+    "url": "https://github.com/motaheri/medium-api/issues"
   },
-  "homepage": "https://github.com/uesteibar/medium-api",
+  "homepage": "https://github.com/motaheri/medium-api",
   "dependencies": {
     "body-parser": "^1.12.0",
-    "express": "^4.12.2",
+    "express": "^4.13.3",
     "mocha": "^2.2.4",
     "request-json": "^0.5.2"
   },

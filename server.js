@@ -1,4 +1,3 @@
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -20,6 +19,11 @@ app.all('*', function(req, res, next) {
 app.get('/user/:username', medium.getUser);
 app.get('/user/:username/info', medium.getUserInfo);
 app.get('/posts/:tag/:limit', medium.getPostsByTag);
+
+// Give a hello world response to all GET requests 
+app.get('/',function(req,res){
+  res.sendFile(__dirname + '/index.html');
+});
 
 
 var port = process.env.PORT || 5000;
