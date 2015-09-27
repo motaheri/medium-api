@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var http = require("http");
 var app = express();
 
 var medium = require('./scrapers/medium-scraper');
@@ -25,6 +26,10 @@ app.get('/',function(req,res){
   res.sendFile(__dirname + '/index.html');
 });
 
+
+setInterval(function() {
+    http.get("http://medium-motaheri.rhcloud.com");
+}, 1800000 + 1800000*Math.random()); // every 30 minutes + [0-1] * 30 
 
 var port = process.env.PORT || 5000;
 app.listen(port, function () {
