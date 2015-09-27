@@ -27,7 +27,7 @@ app.get('/',function(req,res){
 });
 
 setInterval(function() {
-	request('http://mediumapi-motaheri.rhcloud.com/', function (error, response, body) {
+	request('http://mediumapi.herokuapp.com', function (error, response, body) {
 		if (error) {
 			console.log(error);
 		}
