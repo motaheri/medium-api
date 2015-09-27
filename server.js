@@ -28,7 +28,7 @@ app.get('/',function(req,res){
 
 
 setInterval(function() {
-    http.get("http://medium-motaheri.rhcloud.com");
+    http.get("http://mediumapi-motaheri.rhcloud.com");
 }, 1800000 + 1800000*Math.random()); // every 30 minutes + [0-1] * 30 
 
 var port = process.env.PORT || 5000;
